@@ -72,8 +72,8 @@ builder.Services.
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
         };
     });
-// Inject my app dependencies (Dependency Injection
 
+// Inject my app dependencies (Dependency Injection)
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
